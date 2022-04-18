@@ -1,0 +1,51 @@
+\hypertarget{classArray}{}\doxysection{Array Class Reference}
+\label{classArray}\index{Array@{Array}}
+
+
+{\ttfamily \#include $<$array.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArray_a4b8511967d7260235fb3fe4c6ff0fd85}\label{classArray_a4b8511967d7260235fb3fe4c6ff0fd85}} 
+{\bfseries Array} (std\+::size\+\_\+t rows, std\+::size\+\_\+t cols, double val=0.\+0)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classArray_a2366fefbd2b22a7939874fefa0a6eee1}{ncols}} () const
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classArray_a427728b2a4c175d63f6953dc16423c01}{nrows}} () const
+\item 
+\mbox{\Hypertarget{classArray_a085d184b77296ec700b143c253487dd0}\label{classArray_a085d184b77296ec700b143c253487dd0}} 
+double \& {\bfseries operator()} (int row, int col)
+\item 
+\mbox{\Hypertarget{classArray_a765b3ba995ed11c6cb887fc55ea8938a}\label{classArray_a765b3ba995ed11c6cb887fc55ea8938a}} 
+const double \& {\bfseries operator()} (int row, int col) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArray_a011497a8a1f2b2f100928a0385c28a94}\label{classArray_a011497a8a1f2b2f100928a0385c28a94}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classArray}{Array}} \&a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a contiguous 2-\/d array here the data is stored in row-\/major order in a 1-\/d memory space managed as a vector. We overload () to allow us to index this as a(irow, icol) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArray_a2366fefbd2b22a7939874fefa0a6eee1}\label{classArray_a2366fefbd2b22a7939874fefa0a6eee1}} 
+\index{Array@{Array}!ncols@{ncols}}
+\index{ncols@{ncols}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{ncols()}{ncols()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Array\+::ncols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+get the number of columns \mbox{\Hypertarget{classArray_a427728b2a4c175d63f6953dc16423c01}\label{classArray_a427728b2a4c175d63f6953dc16423c01}} 
+\index{Array@{Array}!nrows@{nrows}}
+\index{nrows@{nrows}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{nrows()}{nrows()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Array\+::nrows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+get the number of rows 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+array.\+H\end{DoxyCompactItemize}
